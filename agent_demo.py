@@ -20,7 +20,7 @@ from openai import NotFoundError
 
 # ── OVMS 接続設定 ────────────────────────────────────────────────────────────
 OVMS_BASE_URL = os.getenv("OVMS_BASE_URL", "http://localhost:8000/v3")
-MODEL_NAME = os.getenv("OVMS_MODEL", "tinyllama")
+MODEL_NAME = os.getenv("OVMS_MODEL", "llama-3.2-3b-instruct")
 
 ovms_client = AsyncOpenAI(
     base_url=OVMS_BASE_URL,
